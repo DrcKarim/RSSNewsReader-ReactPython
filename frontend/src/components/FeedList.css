@@ -1,0 +1,97 @@
+.search-input {
+    width: 100%;
+    padding: 6px;
+    margin-bottom: 10px;
+}
+/*
+.feed-item {
+    margin-bottom: 1.5rem;
+}
+
+.feed-item h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #0056b3;
+}
+
+.feed-item p {
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+.feed-item small {
+    color: #888;
+}
+*/
+.feed-item {
+    padding: 8px 10px;
+    margin-bottom: 2px;
+    font-size: 0.95rem;
+}
+
+
+.content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+/* Container sidebar */
+.sidebar {
+    width: 260px;
+    background-color: #f4f4f4;
+    padding: 8px 12px; /* 🔧 less space */
+    overflow-y: auto;
+    border-right: 1px solid #ddd;
+    box-sizing: border-box; /* ✅ ensures padding doesn't overflow */
+}
+
+/* Add feed + search box styling */
+.sidebar .add-feed-form {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.sidebar input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.sidebar button {
+    margin-left: 6px;
+    padding: 0 12px;
+    font-size: 1.2rem;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Feed list */
+.feed-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.feed-item {
+    padding: 10px;
+    margin-bottom: 4px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.2s ease;
+}
+
+.feed-item:hover {
+    background-color: #e6e6e6;
+}
+
+/* Highlight selected */
+.feed-item.active {
+    background-color: #e2e2e2;
+    border-left: 4px solid #007bff;
+    font-weight: bold;
+    padding-left: 12px;
+}

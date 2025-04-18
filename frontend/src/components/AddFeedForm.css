@@ -1,0 +1,31 @@
+.add-feed-form {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 16px;
+}
+
+.add-feed-form input {
+    flex: 1;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.add-feed-form button {
+    padding: 6px 12px;
+    font-size: 18px;
+    background: #fff;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.add-feed-form button:hover {
+    background: #eee;
+}
+
+.add-feed-form {
+    margin: 0;
+    padding: 0;
+}
