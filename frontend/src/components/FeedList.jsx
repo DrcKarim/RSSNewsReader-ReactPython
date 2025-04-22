@@ -1,13 +1,14 @@
 // src/components/FeedList.jsx
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import AddFeedForm from './AddFeedForm';
-import {deleteFeed, getFeedItems, getFeeds, refreshFeed} from "../services/api";
-import { addFeed } from '../services/api';
+import {addFeed, updateFeed ,deleteFeed, getFeedItems, getFeeds, refreshFeed} from "../services/api";
 import './FeedList.css';
+import EditFeedModal from './EditFeedModal';
 
 export default function FeedList() {
     const [feeds, setFeeds] = useState([]);
+    const [isEditing, setIsEditing] = useState(false);
     const [searchTerm, setSearchTerm] = useState('');
     const [selectedFeed, setSelectedFeed] = useState(null);
     const [items, setItems] = useState([]);
@@ -39,7 +40,19 @@ export default function FeedList() {
     };
 
     const handleEditFeed = () => {
-        alert("Edit not implemented yet, coming soon!");
+        setIsEditing(true);
+    };
+    const handleSaveFeed = async (updatedData) => {
+        try {
+            const res = await updateFeed(selectedFeed.id, updatedData);
+            const updatedFeeds = await getFeeds();
+            setFeeds(updatedFeeds.data);
+            setSelectedFeed(res.data.feed);
+            setIsEditing(false);
+        } catch (err) {
+            console.error('Failed to update feed:', err);
+            alert('Failed to update feed');
+        }
     };
 
     const handleDeleteFeed = async () => {
@@ -124,7 +137,17 @@ export default function FeedList() {
                         <hr/>
                     </div>
                 ))}
+
+                {isEditing && (
+                    <EditFeedModal
+                        feed={selectedFeed}
+                        onSave={handleSaveFeed}
+                        onClose={() => setIsEditing(false)}
+                    />
+                )}
+
             </div>
         </div>
+
     );
 }
