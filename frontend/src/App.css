@@ -1,11 +1,17 @@
-/* src/App.css */
-body {
+/* Reset and base styles */
+* {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+  font-family: sans-serif;
+  background: #fff;
+}
 
+/* App layout */
 .app-container {
   height: 100vh;
   display: flex;
@@ -14,63 +20,22 @@ body {
 
 .layout {
   display: flex;
-  height: 100%;
-}
-
-.sidebar {
-  width: 260px;
-  background-color: #f4f4f4;
-  padding: 16px;
-  overflow-y: auto;
-  border-right: 1px solid #ddd;
-}
-
-.logo {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 24px;
-}
-
-.content {
   flex: 1;
-  padding: 24px;
-  overflow-y: auto;
+  overflow: hidden;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-li {
-  margin-bottom: 12px;
-}
-
-a {
-  text-decoration: none;
-  color: #333;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-
-
-.feed-item {
-  margin-bottom: 24px;
-}
-
-.feed-item h3 {
-  margin: 0;
-  font-size: 1.1rem;
-  color: #0056b3;
-}
-
-.feed-item p {
-  margin: 4px 0 8px;
-}
-
-.feed-item small {
-  color: #888;
+/* Navbar */
+.navbar {
+  height: 60px;
+  background-color: #1e1f23;
+  color: white;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.4rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }

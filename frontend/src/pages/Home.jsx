@@ -6,12 +6,9 @@ import FeedList from '../components/FeedList';
            </aside>  */
 
 export default function Home() {
-
     return (
-        <div className="layout">
-            <main className="content">
-                <FeedList />
-            </main>
+        <div style={{ display: 'flex', flex: 1 }}>
+            <FeedList />
         </div>
     );
 }

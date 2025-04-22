@@ -1,13 +1,13 @@
 /* src/components/Navbar.css */
 .navbar {
-    height: 64px;
+    height: 60px;
     background-color: #1e1f23;
     color: white;
-    padding: 10px 24px; /* more vertical and horizontal breathing room */
     display: flex;
     align-items: center;
+    padding: 0 20px; /* only horizontal padding */
     font-weight: bold;
-    font-size: 1.5rem;  /* increased from 1.2rem */
+    font-size: 1.3rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
@@ -16,5 +16,6 @@
 
 .navbar-title {
     margin: 0;
+    fontSize: '1.5rem';
 }
 
