@@ -25,13 +25,13 @@ jobs:
       - name: Build and push frontend image
         uses: docker/build-push-action@v4
         with:
-          context: ./Frontend
+          context: ./frontend
           push: true
           tags: dcrkarim/rssnewsreader-reactpython-frontend:latest
 
       - name: Build and push backend image
         uses: docker/build-push-action@v4
         with:
-          context: ./Backend
+          context: ./backend
           push: true
           tags: dcrkarim/rssnewsreader-reactpython-backend:latest
