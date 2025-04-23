@@ -2,7 +2,7 @@
 
 This project is a full-stack RSS Reader built with **React** (frontend) and **Django REST Framework** (backend). It allows users to add RSS feed URLs, view articles, refresh feeds, and manage them through a clean UI.
 
-![alt text](image.png)
+![alt text](screenshot.png)
 
 ---
 
