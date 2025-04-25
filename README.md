@@ -124,18 +124,6 @@ docker-compose up --build
 
 ---
 
-## 📦 Build & Push to Docker Hub
-
-```bash
-docker tag django-backend yourusername/rss-backend:latest
-docker push yourusername/rss-backend:latest
-
-docker tag react-frontend yourusername/rss-frontend:latest
-docker push yourusername/rss-frontend:latest
-```
-
----
-
 ## 📄 Environment
 
 - Frontend calls backend via `http://localhost:8000/api/`
