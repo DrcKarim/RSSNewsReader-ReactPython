@@ -1,4 +1,4 @@
-# 📰 Full-Stack RSS Reader App (React + Django)
+# Full-Stack RSS Reader App (React + Django)
 
 This project is a full-stack RSS Reader built with **React** (frontend) and **Django REST Framework** (backend). It allows users to add RSS feed URLs, view articles, refresh feeds, and manage them through a clean UI.
 
@@ -6,7 +6,7 @@ This project is a full-stack RSS Reader built with **React** (frontend) and **Dj
 
 ---
 
-## 🚀 Features
+## Features
 
 - Add RSS feed URLs
 - Parse and store articles using `feedparser`
@@ -19,7 +19,7 @@ This project is a full-stack RSS Reader built with **React** (frontend) and **Dj
 
 ---
 
-## 🧱 Tech Stack
+## Tech Stack
 
 | Layer      | Tech                       |
 |------------|----------------------------|
@@ -30,7 +30,7 @@ This project is a full-stack RSS Reader built with **React** (frontend) and **Dj
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 project-root/
@@ -42,9 +42,9 @@ project-root/
 
 ---
 
-## ⚙️ Local Development
+## Local Development
 
-### ▶️ Backend (Django)
+### ==> Backend (Django)
 
 ```bash
 cd backend
@@ -59,7 +59,7 @@ Runs at: http://localhost:8000
 
 ---
 
-### ▶️ Frontend (React)
+### ==> Frontend (React)
 
 ```bash
 cd frontend
@@ -71,7 +71,7 @@ Runs at: http://localhost:3000
 
 ---
 
-## 🐳 Docker Setup
+## Docker Setup
 
 ### docker-compose.yml
 
@@ -112,7 +112,7 @@ docker-compose up --build
 
 ---
 
-## 🔁 API Endpoints
+## API Endpoints
 
 | Method | Endpoint                   | Description                       |
 |--------|----------------------------|-----------------------------------|
@@ -124,7 +124,7 @@ docker-compose up --build
 
 ---
 
-## 📄 Environment
+## Environment
 
 - Frontend calls backend via `http://localhost:8000/api/`
 - CORS enabled in Django for development
@@ -132,6 +132,6 @@ docker-compose up --build
 
 ---
 
-## 📄 License
+## License
 
 MIT – feel free to use, fork, and contribute.
